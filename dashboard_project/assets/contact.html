@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background: #000;
+      color: #fff;
+      font-family: 'Poopis', sans-serif;
+      justify-content: center;
+      display: flex;
+      line-height: 1.2;
+      width: 100%;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    h2{
+      text-align: center;
+      color: red;
+      font-size: 2rem;
+      margin: 5%;
+      
+    }
+    header{
+      margin: 20px;
+      margin-top: 10%;
+      justify-content: center;
+      align-items: center;
+      width: 490px;
+    }
+    form{
+      background: transparent;
+      justify-content: center;
+      flex-direction: column;
+      border: none;
+      margin: 5vh auto;
+      gap: 3px;
+      border-radius: 30px;
+      box-shadow: 0 0 30px  red;
+      /* display: block; */
+      padding: 1.5rem;
+      margin-top: 20px;
+    }
+    label, input{
+      padding: 10px;
+    }
+    label{
+      display: block;
+      justify-content: center;
+    }
+    input{
+      width: 95%;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    textarea{
+      width: 95%;
+      padding: 8px;
+      border: none;
+      border-radius: 8px;
+    }
+    .sub{
+      justify-content: center;
+      text-align: center;
+      margin: 10px;
+      margin-bottom: 0px;
+    }
+    button{
+      border: none;
+      border-radius: 20px;
+      padding: 13px;
+      background: red;
+      width: 50%;
+      font-weight: 600;
+      margin-bottom: 5%;
+    }
+
+    button:hover{
+      background: black;
+      color: white;
+      border: none;
+      box-shadow: 0 0 10px red;
+    }
+
+    button:active{
+      background: red;
+    }
+    .main{
+      padding: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <form action="">
+      <h2>Contact Us</h2>
+      <div class="main">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="main">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="main">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+          <div class="sub">
+            <button>Submit</button>
+          </div>
+    </form>
+  </header>
+</body>
+</html>
